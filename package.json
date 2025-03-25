@@ -1,0 +1,36 @@
+{
+  "name": "app-mon-clock",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "~6.1.0",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "fitbit": {
+    "appUUID": "b834d077-56fa-4378-9810-499cfaad1632",
+    "appType": "clockface",
+    "appDisplayName": "App Mon Clock",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#000000",
+    "appClusterID":"ro.teofilos.hrfetch",
+    "developerID":"a481342c-3f0e-4176-bcc3-519570b3078e",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_activity",
+      "run_background",
+      "access_internet",
+      "access_app_cluster_storage"
+    ],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  }
+}
